@@ -14,7 +14,7 @@
         href="https://ping.pub"
         target="_blank"
         rel="noopener noreferrer"
-        >Ping.pub</a
+        >Alfonodes</a
       >
     </div>
     <div
