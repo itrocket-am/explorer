@@ -1,18 +1,44 @@
 {
-  "chain_name": "symphony",
-  "api": ["https://symphony-testnet-api.hibunode.com"],  
-  "rpc": ["https://symphony-testnet-rpc.hibunode.com"],  
-  "coin_type": 118,
-  "min_tx_fee": 200,
-  "sdk_version": "v0.50.9",  
-  "addr_prefix": "symph",  
-  "logo": "/logos/symphony.png",  ü
-  "assets": [
+  "chain_id": "symphony-testnet-4",
+  "chain_name": "Symphony Testnet",
+  "api": "https://symphony-testnet-api.hibunode.com",
+  "rpc": "https://symphony-testnet-rpc.hibunode.com",
+  "stakingDenom": "symphony",
+  "coinType": 118,
+  "bip44": {
+    "coinType": 118
+  },
+  "bech32Config": {
+    "bech32PrefixAccAddr": "symphony",
+    "bech32PrefixAccPub": "symphonypub",
+    "bech32PrefixValAddr": "symphonyvaloper",
+    "bech32PrefixValPub": "symphonyvaloperpub",
+    "bech32PrefixConsAddr": "symphonyvalcons",
+    "bech32PrefixConsPub": "symphonyvalconspub"
+  },
+  "currencies": [
     {
-      "base": "symcoin",  
-      "symbol": "SYM",    
-      "exponent": 18,
-      "logo": "/logos/symphony.png"  
+      "coinDenom": "SYMP",
+      "coinMinimalDenom": "usymph",
+      "coinDecimals": 6
     }
-  ]
+  ],
+  "feeCurrencies": [
+    {
+      "coinDenom": "SYMP",
+      "coinMinimalDenom": "usymph",
+      "coinDecimals": 6
+    }
+  ],
+  "stakeCurrency": {
+    "coinDenom": "SYMP",
+    "coinMinimalDenom": "usymph",
+    "coinDecimals": 6
+  },
+  "gasPriceStep": {
+    "low": 0.01,
+    "average": 0.025,
+    "high": 0.03
+  },
+  "features": ["stargate", "ibc-transfer", "no-legacy-stdTx"]
 }
