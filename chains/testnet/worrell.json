@@ -1,0 +1,18 @@
+{
+  "chain_name": "worrell",
+  "api": ["https://worrell-testnet-api.itrocket.net"],
+  "rpc": ["https://worrell-testnet-rpc.itrocket.net"],
+  "coin_type": 118,
+  "min_tx_fee": 200,
+  "sdk_version": "0.45.11",
+  "addr_prefix": "worrell",
+  "logo": "/logos/worrell.png",
+  "assets": [
+    {
+      "base": "uworrell",
+      "symbol": "WORRELL",
+      "exponent": 6,
+      "logo": "/logos/worrell.png"
+    }
+  ]
+}
